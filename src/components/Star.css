@@ -1,0 +1,99 @@
+/* star-size : 20em for debugging , 8em to 1em for use  */
+/*  For blueshift : large 8em, medium 4em, small 2em, minute 1em  */
+/*  For redshift : large 8em, medium 4em, small 2em , minute 1em  */
+
+
+
+.dummy-star {
+  position: absolute;
+  
+  /* border: 1px solid white; */
+  width: var(--star-size);
+  height: var(--star-size);
+  left: 40%;
+  display: flex; 
+  justify-content: center; 
+  /* flex-direction: column; */
+}
+
+.dummy-star-core {
+  position: relative;
+  width: 4%;
+  height: 4%;
+  background-color: white;
+  /* border: 1px solid white; */
+  align-self: center;
+  border-radius: 50%;
+  /* z-index: 1; */
+}
+
+.dummy-star-lines {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  align-self: center;
+}
+
+.vertical {
+  transform: rotateZ(90deg);
+}
+
+.redshift-redish-core {
+  box-shadow: 
+  0 0 calc(var(--star-size)*.02) calc(var(--star-size)*.01) rgba(255, 220, 220, 0.8),
+  0 0 calc(var(--star-size)*.06) calc(var(--star-size)*.02) rgba(255, 234, 195, 0.4),
+  0 0 calc(var(--star-size)*.08) calc(var(--star-size)*.06) rgba(255, 188, 188, 0.2)
+  ;
+}
+
+.redshift-redish-lines {
+  background: radial-gradient(circle, rgba(255,242,242,.4) 0%, rgba(0,0,0,0) 50%); 
+}
+
+.redshift-yelloish-core {
+  box-shadow: 
+  0 0 calc(var(--star-size)*.02) calc(var(--star-size)*.01) rgba(255, 220, 220, 0.8),
+  0 0 calc(var(--star-size)*.06) calc(var(--star-size)*.02) rgba(255, 213, 189, 0.4),
+  0 0 calc(var(--star-size)*.08) calc(var(--star-size)*.06) rgba(255, 244, 184, 0.4)
+  ;
+}
+
+.redshift-yelloish-lines {
+  background: radial-gradient(circle, rgba(252, 246, 171, 0.2) 0%, rgba(0,0,0,0) 50%); 
+}
+
+.blueshift-bluish-core {
+  background-color: rgba(184, 185, 255, 1);
+  width: 2%;
+  height: 2%;
+  box-shadow: 
+  0 0 calc(var(--star-size)*.02) calc(var(--star-size)*.01) rgba(211, 210, 255, 0.8),
+  0 0 calc(var(--star-size)*.06) calc(var(--star-size)*.02) rgba(159, 201, 255, 0.4),
+  0 0 calc(var(--star-size)*.08) calc(var(--star-size)*.06) rgba(173, 174, 253, 0.4)
+  ;
+}
+
+.blueshift-bluish-lines {
+  background: radial-gradient(circle, rgba(171, 247, 252, 0.2) 0%, rgba(0,0,0,0) 50%);
+}
+
+.blueshift-purplish-core {
+  background-color: rgb(253, 198, 255);
+  width: 2%;
+  height: 2%;
+  box-shadow: 
+  0 0 calc(var(--star-size)*.02) calc(var(--star-size)*.01) rgba(203, 200, 255, 0.8),
+  0 0 calc(var(--star-size)*.06) calc(var(--star-size)*.02) rgba(168, 174, 255, 0.4),
+  0 0 calc(var(--star-size)*.08) calc(var(--star-size)*.06) rgba(255, 184, 251, 0.4)
+  ;
+}
+
+.blueshift-purplish-lines {
+  background: radial-gradient(circle, rgba(198, 199, 255, 0.2) 0%, rgba(0,0,0,0) 50%);
+}
+
+.rotate-45deg {
+  transform: rotateZ(45deg);
+}
+
