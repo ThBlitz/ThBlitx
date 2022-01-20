@@ -10,12 +10,12 @@ export default class Star_Dust extends Component {
     this.randNum = this.randNum.bind(this);
     this.Canvas = this.Canvas.bind(this);
     
-    this.starDensity = [.94,.059,.001];
+    this.starDensity = [.9,.09,.01];
     this.numberOfStars = 400;
-    this.shiftPool = ['redish', 'yelloish', 'bluish', 'purplish'];
+    this.shiftPool = ['redish', 'yelloish', 'bluish', 'purplish', 'whitish'];
     this.anglePool = [''];
-    this.starSizePool = [['.2em','.5em','1em'],
-     ['2em','3em','4em','5em'], ['6em','7em','8em']];
+    this.starSizePool = [['.03em'],
+     ['.06em','.08em','.1em'], ['.12em','.14em','.16em','.18em','.2em']];
 
     this.state = {
       stars : []
@@ -80,6 +80,7 @@ export default class Star_Dust extends Component {
     return (
       <>
         <div className='deep-space-container'>
+          <Star angle={''} star_size={'.05em'} shift={'yelloish'} position={['50%','50%']}/>
           {this.state.stars}
         </div>
       </>

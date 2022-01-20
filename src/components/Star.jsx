@@ -40,6 +40,9 @@ export default class Star extends Component {
     } else if (shift_type === 'purplish') {
       coretype = 'blueshift-purplish-core';
       line_type = 'blueshift-purplish-lines';
+    } else if(shift_type === 'whitish') {
+      coretype = 'whiteshift-bluish-core';
+      line_type = 'whiteshift-bluish-lines';
     } else {
       console.log('Stars.jsx, shift type : ', shift_type);
     }
